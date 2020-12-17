@@ -67,11 +67,15 @@ export default {
   grid-gap: 1rem;
   margin-top: 30px
 }
+.todo:hover {
+  transform: translateY(-10px)
+}
 .todo {
   border: 1px solid #ccc;
   position: relative;
   overflow: hidden;
   background: #fbeec1;
+  transition: 0.2s;
 }
 .todo:after {
   position: absolute;
@@ -109,6 +113,8 @@ export default {
   font-size: 14px;
   z-index: 99;
   color: #fff;
+  transition: 0.2s;
+  cursor: pointer;
 }
 .todo span.delete {
   right: 0;
